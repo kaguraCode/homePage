@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/homePage/static/css/main.957d50e8.css",
+    "main.js": "/homePage/static/js/main.59ffeff8.js",
+    "static/js/787.885219e9.chunk.js": "/homePage/static/js/787.885219e9.chunk.js",
+    "static/media/interier-partners.jpg": "/homePage/static/media/interier-partners.e49e563c2a8d1bb01cad.jpg",
+    "static/media/logo-partners.png": "/homePage/static/media/logo-partners.a8af744f179dbced613c.png",
+    "static/media/navigation.jpg": "/homePage/static/media/navigation.0522591c599821de940e.jpg",
+    "static/media/consultant.png": "/homePage/static/media/consultant.90ea381915a0aaba993c.png",
+    "static/media/usb-c-cable.png": "/homePage/static/media/usb-c-cable.402dbc9b4165e8394be5.png",
+    "static/media/half-moon.png": "/homePage/static/media/half-moon.a19e3b93b71ed46b3178.png",
+    "static/media/processing.png": "/homePage/static/media/processing.a53a3770516ac23ba134.png",
+    "static/media/vehicle.png": "/homePage/static/media/vehicle.cc9952e3eee3cf4cd8e5.png",
+    "static/media/contrast.png": "/homePage/static/media/contrast.27a5d8395620746ff965.png",
+    "static/media/camera.png": "/homePage/static/media/camera.8863c1d2789825f76759.png",
+    "static/media/heart.png": "/homePage/static/media/heart.59848f4811a23aa759c3.png",
+    "index.html": "/homePage/index.html",
+    "main.957d50e8.css.map": "/homePage/static/css/main.957d50e8.css.map",
+    "main.59ffeff8.js.map": "/homePage/static/js/main.59ffeff8.js.map",
+    "787.885219e9.chunk.js.map": "/homePage/static/js/787.885219e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.957d50e8.css",
+    "static/js/main.59ffeff8.js"
+  ]
+}
