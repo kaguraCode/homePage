@@ -1,12 +1,22 @@
 {
   "files": {
-    "main.css": "/homePage/static/css/main.957d50e8.css",
-    "main.js": "/homePage/static/js/main.59ffeff8.js",
+    "main.css": "/homePage/static/css/main.b4523613.css",
+    "main.js": "/homePage/static/js/main.c5f01459.js",
     "static/js/787.885219e9.chunk.js": "/homePage/static/js/787.885219e9.chunk.js",
+    "static/media/ipad-2021.png": "/homePage/static/media/ipad-2021.b5251afc08a5cf0fd990.png",
+    "static/media/microvolnovka.png": "/homePage/static/media/microvolnovka.f9fba8601c22b0691db7.png",
+    "static/media/led-tv.png": "/homePage/static/media/led-tv.72a4760b0fb63323dd60.png",
+    "static/media/stir-machine.png": "/homePage/static/media/stir-machine.18fb10cff3e0cebad006.png",
+    "static/media/tv-samsung-true.png": "/homePage/static/media/tv-samsung-true.984391e1c67c350a37bf.png",
+    "static/media/posydo-machine.png": "/homePage/static/media/posydo-machine.2307adbd2950ce755268.png",
+    "static/media/macbook-pro.png": "/homePage/static/media/macbook-pro.47d650245f8978df8912.png",
+    "static/media/tv-supra.png": "/homePage/static/media/tv-supra.992200300ff82b16a3be.png",
+    "static/media/iphone14.png": "/homePage/static/media/iphone14.403855000bfb8b88d8cb.png",
     "static/media/interier-partners.jpg": "/homePage/static/media/interier-partners.e49e563c2a8d1bb01cad.jpg",
+    "static/media/coffemachine.png": "/homePage/static/media/coffemachine.7af3b9b89c0769cf5a16.png",
+    "static/media/condicioner.png": "/homePage/static/media/condicioner.5239eec5d813cc90c8e5.png",
     "static/media/logo-partners.png": "/homePage/static/media/logo-partners.a8af744f179dbced613c.png",
-    "static/media/navigation.jpg": "/homePage/static/media/navigation.0522591c599821de940e.jpg",
-    "static/media/consultant.png": "/homePage/static/media/consultant.90ea381915a0aaba993c.png",
+    "static/media/blender.png": "/homePage/static/media/blender.549e182b034f51ccac11.png",
     "static/media/usb-c-cable.png": "/homePage/static/media/usb-c-cable.402dbc9b4165e8394be5.png",
     "static/media/half-moon.png": "/homePage/static/media/half-moon.a19e3b93b71ed46b3178.png",
     "static/media/processing.png": "/homePage/static/media/processing.a53a3770516ac23ba134.png",
@@ -14,13 +24,17 @@
     "static/media/contrast.png": "/homePage/static/media/contrast.27a5d8395620746ff965.png",
     "static/media/camera.png": "/homePage/static/media/camera.8863c1d2789825f76759.png",
     "static/media/heart.png": "/homePage/static/media/heart.59848f4811a23aa759c3.png",
+    "static/media/slick.svg": "/homePage/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/homePage/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/homePage/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/homePage/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/homePage/index.html",
-    "main.957d50e8.css.map": "/homePage/static/css/main.957d50e8.css.map",
-    "main.59ffeff8.js.map": "/homePage/static/js/main.59ffeff8.js.map",
+    "main.b4523613.css.map": "/homePage/static/css/main.b4523613.css.map",
+    "main.c5f01459.js.map": "/homePage/static/js/main.c5f01459.js.map",
     "787.885219e9.chunk.js.map": "/homePage/static/js/787.885219e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.957d50e8.css",
-    "static/js/main.59ffeff8.js"
+    "static/css/main.b4523613.css",
+    "static/js/main.c5f01459.js"
   ]
 }
