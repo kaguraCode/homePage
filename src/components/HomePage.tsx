@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
 import '../styles/style.css'
+
+import '../carousel/carousel-style.css'
+import '../carousel/Carousel'
+
+import interier from '../images/interier-partners.jpg'
 import logoImage from '../images/logo-partners.png'; 
 import laptopImage from '../images/laptop.png';
 import smartPhoneImage from '../images/smartphone.png';
@@ -11,12 +16,12 @@ import processingImage from '../images/processing.png';
 import tvImage from '../images/television.png';
 import moonLogo from '../images/half-moon.png';
 import sunLogo from '../images/contrast.png';
-import consultPng from '../images/consultant.png'
-import navigationJpg from '../images/navigation.jpg'
-import interier from '../images/interier-partners.jpg'
 import heartPng from '../images/heart.png'
 import servicesPng from '../images/vehicle.png'
 import backetPng from '../images/shopping-online.png'
+
+import { Carousel } from '../carousel/Carousel';
+import { Carousel2 } from '../carousel/Carousel2';
 
 export function HomePage() {
   // Инициализируем состояние для текущей темы
@@ -25,7 +30,6 @@ export function HomePage() {
 
   const [isOpen, setIsOpen] = useState(false);
 
- 
   // Для отображения тёмной/светлой темы
   const addThemeClassBgBody = initTheme
   const addNameTheme = initTheme === 'whiteTheme' ? 'Темная тема' : 'Светлая тема'
@@ -48,7 +52,22 @@ export function HomePage() {
       }
     }, []);
 
+
+
     const logoImg = logo ? sunLogo : moonLogo
+
+
+    // const flickityOptions = {
+    //   initialIndex: 2,
+    //   autoPlay: true, 
+    //   pauseAutoPlayOnHover: false, // Опционально, можно настроить паузу при наведении    
+    // }
+
+    // const technics = {
+    //   id: [1, 2],
+    //   title: ['Macbook', 'TV'],
+    //   images: [macbook, TV] 
+    // }
 
     return ( 
         <div className={addThemeClassBgBody}>
@@ -62,11 +81,11 @@ export function HomePage() {
             <HamburgerMenu
               isOpen={isOpen}
               menuClicked={() => setIsOpen(!isOpen)}
-              width={50}
-              height={35}
-              strokeWidth={1}
-              rotate={0}
-              color='white'
+              width={40}
+              height={30}
+              strokeWidth={0}
+              rotate={0}  
+              color='green'
               borderRadius={0}
               animationDuration={0.5}
             />
@@ -96,23 +115,23 @@ export function HomePage() {
             </a>
 
             <a href="google.com" className='flex-nav-png'>
-              <img src={servicesPng} alt="heart" width='25' />
+              <img src={servicesPng} alt="heart" width='25' />  
               <p className='btnHamburg'>Услуги</p>
             </a>
 
-            <a href="google.com">
+            <a href="google.com" className='flex-nav-png'>
               <p className='btnHamburg'>Каталог</p>
             </a>
 
-            <a href="google.com">
+            <a href="google.com" className='flex-nav-png'>
               <p className='btnHamburg'>Доставка и оплата</p>
             </a>
 
-            <a href="google.com">
+            <a href="google.com" className='flex-nav-png'>
               <p className='btnHamburg'>О нас</p>
             </a>
 
-            <a href="google.com">
+            <a href="google.com" className='flex-nav-png'>
               <p className='btnHamburg'>Контакты</p>
             </a>
 
@@ -122,7 +141,7 @@ export function HomePage() {
 
           </ul>
       </div>
-          <a href="#">
+          <a href="google.com">
             <img src={logoImage} alt="logo" width="100" className='logo' />
           </a>
           <button className="btn-nav"><p className='btn-text-nav'>Доставка и оплата</p></button>
@@ -187,40 +206,30 @@ export function HomePage() {
               </button>
             </div>
 
-            <img src={logoImage} alt="logo" width='150' className='logo-2' />
-            <p className="describe">Магазин электронной техники <span className="partners">Partner's</span> в Костанае – ваш надежный партнер для широкого ассортимента электронной техники и инновационных устройств. </p>
-            <img src={interier} alt="int" width="370" className='interier' />
+            <div className="interierPart">
+              <img src={interier} alt="interier" />
+              <div className="overlay">
+                <h1 className='hello-text'>Магазин электронной техники - Partner's</h1>
+                <p className='hello-text-p'>Мы имеем большой каталог электронной техники и не только.</p>
+              </div>
+            </div>
+            {/* < src={interier} alt="interier" width={700} className='interier' /> */}
+            
+
+
+           {/*  <img src={logoImage} alt="logo" width='150' className='logo-2' />
+            <p className="describe">Магазин электронной техники <span className="partners">Partner's</span> в Костанае – ваш надежный партнер для широкого ассортимента электронной техники и инновационных устройств. </p> */}
           </div>
 
-          <section className="bodyContent-part2">
-            <div className='brown-block'>
-              <div className="describeForm">
-                <h3 className='h3-consult'>Нужна консультация по выбору техники?</h3>
-                <p className='h3-consult'>Есть вопрос? Задайте его в форме ниже:</p>
-              </div>
-                <div className="formConsult">
-                
-                <img src={consultPng} alt="consult" width='800' className='consultantImg'/>
-                <div className='inputsForm'>
-                  <input type="text" placeholder='Ваше имя*' id='firstInput'/>
-                  <input type="text" placeholder='+7- - - - - - - -*'/>
-                  <input type="text" placeholder='Ваш вопрос*'/>
-                  <button className="btn-send">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
-                </div>
-              </div>
+          <h2 className='desc-flickity'>Топ наших товаров:</h2>
 
-                <div className="title">
-                  <h3 id='h3-mag-elec'>Магазин электронной техники <span className="partners-2">Partner's</span></h3>
-                  <p className='parag-navig'>рядом с вами, в Костанае</p>
-                <div className="navig-jpg">
-                    <img src={navigationJpg} alt="navigation" className='image-navigation' />
-                </div>
-                </div>
-              </div>
-          </section>
-          <footer>
-          © Все права защищены (2023)
-        </footer>
+              <Carousel />
+              <Carousel2 />
+        
+            <footer>
+            Ⓒ Все права защищены
+            </footer>
+            
         </section>
         
       

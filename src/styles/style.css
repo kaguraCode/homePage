@@ -1,17 +1,25 @@
 * {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'sans-serif', 'ui-monospace', 'SFMono-Regular';
 }
 
 html, body {
+  background-color: rgb(20, 20, 20);
+
   height: 100%;
-  margin: 0;
   padding: 0;
   justify-content: center;
   align-items: center;
 }
 
+button {
+  cursor: pointer;
+}
 
 .container {
+  border: 2px solid black;
   max-width: 100%;
   width: auto; /* Автоматическая ширина */
   margin: 0 auto; /* Центрирование контейнера по горизонтали */
@@ -22,20 +30,40 @@ html, body {
   display: flex;
 }
 
+/* header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 0px 50px -20px;
+} */
+
+.desc-2carousel {
+  position: absolute;
+  z-index: 2;
+  right: 1px;
+  left: 1px;
+  top: 1260px;
+}
+
+
+
+
+
 header {
-    border-bottom: 2px solid gray;
     margin-bottom: 10px;
 }
 
 .bodyContent {
     margin-top: 50px;
     margin-bottom: 1000px;
+    min-height: 100vh; 
 }
 
 .flex-head {
     display: flex;
-    background-color:  rgb(25, 27, 1);
-    border-bottom: 3px solid rgb(182, 156, 9);
+    background-color:  #f5f5f5;
 }
 
 .btn-nav {
@@ -43,10 +71,11 @@ header {
     font-size: 20px;
 }
 
+
 .logo {
     margin-left: 30px;
-    margin-top: 2px;
-    margin-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 } 
 
 .catalog {
@@ -55,7 +84,7 @@ header {
     border-radius: 20px;
     width: 350px;
     height: 520px;
-    margin-left: 30px;
+    margin-left: 70px;
 }
 
 .h3-catalog {
@@ -64,12 +93,13 @@ header {
     margin-bottom: 30px;
     color: black;
     font-size: 30px;
-    background-color: rgb(212, 191, 68);
+    background-color: white;
 }
 
 .catalog-flex {
     display: flex;
     width: 100%;
+    height: 100%;
 }
 
 .btn-catalog {
@@ -81,8 +111,13 @@ header {
     padding-left: 5px;
 }
 
+.desc-2carousel {
+  font-size: 35px;
+  text-align: center;
+}
+
 .btn-text-nav {
-    color: white;
+    color: black;
     transition: all linear .25s;
     -webkit-transition: all linear .25s;
 }
@@ -99,7 +134,7 @@ header {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: rgb(206, 177, 12);
+    background-color: rgb(0, 0, 0);
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.4s;
@@ -129,6 +164,11 @@ header {
   }
 
   
+  .desc-flickity {
+    margin-top: 110px;
+    font-size: 40px;
+    text-align: center;
+  }
 
   .describe {
     font-size: 40px;
@@ -139,7 +179,7 @@ header {
 
   .partners {
     font-size: 45px;
-    color: rgb(179, 154, 13);
+    color: black;
   }
 
 .partners-2 {
@@ -160,14 +200,16 @@ header {
 
 
 .btn-regist {
-    color: white;
+    color: rgb(153, 134, 26);
     font-size: 18px;
     margin-left: 45px;
-    border: 2px solid white;
+    border: 2px solid rgb(155, 132, 0);
     border-radius: 20px;
-    margin-top: 34px;
+    margin-top: 44px;
     width: 120px;
     height: 40px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 20px;
 }
 
 .btn-regist:hover {
@@ -177,62 +219,157 @@ header {
 }
 
 .btn-regist:active {
-    background-color: rgb(206, 177, 12);
+    background-color: rgb(213, 198, 114);
 }
 
-.btn-regist {
-  transition: background-color 0.3s ease-in-out;
-  border-radius: 20px;
+
+.interierPart {
+  position: relative;
+  margin-left: 50px;
+  width: 1000px; /* Задайте нужную ширину и высоту */
+  height: 520px;
 }
+
+.interierPart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.650); /* Здесь 0.5 - это прозрачность, меняйте значение по желанию */
+}
+
+.hello-text {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 40px;
+  color: #f5f5f5;
+}
+
+.hello-text-p {
+  text-align: center;
+  font-size: 20px;
+  color: #f5f5f5;
+}
+
 
 #changeTheme-button {
   font-size: 20px;
   margin-left: 10px;
-  color: white;
+  color: black;
 }
 
 .darkTheme { /* Всё что будет добавлено/изменено в тёмной теме */
   background-color: rgb(20, 20, 20);
   color: white;
-  
+
+
   .catalog {
-    background-color: rgb(79, 73, 1);
+    background-color: rgb(0, 0, 0);
     color: rgba(255, 255, 255, 0.662);
   }
 
-  .interier {
-    color: rgb(203, 198, 198);
+  .flex-head {
+    background-color: black;
   }
 
-  .formConsult {
-    background-color: rgb(92, 96, 99);
+  .btn-catalog-txt {
+    color: white;
   }
-}
+  
 
- .whiteTheme { /* Всё что будет добавлено/изменено в светлой теме */
-  background-color: rgb(255, 240, 223);
-
-  .h3-consult {
+  .btn-text-nav {
     color: white;
   }
 
-  .formConsult {
-    background-color: rgb(229, 234, 237);
+  .btn-text-nav::after {
+    background-color: white;
   }
+
+  #changeTheme-button {
+    color: white;
+  }
+
+  .partners {
+    color: white;
+  }
+
+  .flickity-button {
+    background-color: rgb(212, 204, 204);
+  }
+
+
 }
+
+ .whiteTheme { /* Всё что будет добавлено/изменено в светлой теме */
+  background-color: white;
+
+
+  
+ 
+
+  
+
+  header {
+    color: black;
+  }
+
+  .h3-consult {
+    color: black;
+  }
+
+  
+  .btn-catalog-txt:hover {
+    border-radius: 8px;
+    background-color: rgba(23, 22, 22, 0.299);
+    color: rgb(0, 0, 0);
+  }
+
+  .btn-catalog-txt:active {
+    background-color: rgb(241, 220, 85);
+  }
+
+
+  .btn-regist p {
+    color: black;
+  }
+
+  .btn-regist:hover {
+    border-radius: 20px;
+    background-color: rgb(162, 160, 160);
+
+  }
+
+  
+  .btn-regist:active {
+      background-color: rgb(213, 198, 114);
+  }
+  
+}
+
+footer {
+  text-align: center; 
+  width: 100%;
+  background-color: rgb(3, 5, 17);
+  margin-top: 100px;
+  color: white;
+}  
 
 .logoTh {
   display: flex;
   margin-left: 100px;
-  margin-top: 38px;
+  margin-top: 48px;
   width: 30px;
   height: 30px;
 }
 
-.brown-block {
-  background-color: rgb(158, 123, 7);
-  margin-top: 100px;
-}
 
 .consultantImg {
   margin-left: 100px;
@@ -259,6 +396,10 @@ header {
 .inputsForm {
   margin-left: 200px;
   width: 100px;
+}
+
+.close-button {
+  background-color: rgba(245, 245, 220, 0);
 }
 
 input {
@@ -308,6 +449,17 @@ input::placeholder {
   text-align: center;
 }
 
+.flex-nav-png {
+  color: black;
+  text-decoration: none;
+}
+
+.btnHamburg {
+  color: black;
+  text-decoration: none;
+}
+
+
 #logo-mail {
   height: 85px;
 }
@@ -342,6 +494,10 @@ footer {
   font-size: 15px;
   height: 30px;
   background-color: rgb(31, 31, 43);
+}
+
+#h3-mag-elec, .parag-navig {
+  color: black;
 }
 
 
@@ -475,16 +631,18 @@ footer {
   }
   
   .menu {
+    z-index: 1001;
     position: fixed;
     top: 0;
     left: -200px;
     width: 200px;
     height: 100%;
-    background-color: rgb(148, 139, 36);
+    background-color: gray;
     transition: left 0.3s ease-in-out;
   }
   
   .menu.open {
+    z-index: 1001;
     left: 0;
   }
   
@@ -513,6 +671,9 @@ footer {
     color: black;
   }
 
+  #changeTheme-button-Changed {
+    background-color: #f5f5f500;
+  }
 
   #changeTheme-button {
     margin-right: 200px;
@@ -607,6 +768,12 @@ footer {
     display: block;
   }
 
+  .interierPart {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+
   .logo-2 {
     display: block;
   }
@@ -665,6 +832,12 @@ footer {
   }
 }
 
+@media (max-width: 441px) {
+  footer {
+    margin-top: 450px;
+  }
+}
+
 @media (max-width: 425px) {
   .inputsForm {
     margin-left: 50px;
@@ -715,6 +888,7 @@ footer {
     font-size: 25px;
   }
 
+  
   .inputsForm {
     margin-left: 160px;
   }
@@ -741,9 +915,28 @@ footer {
   }
 }
 
+@media (max-width: 440px) {
+  .interierPart {
+    height: 400px;
+  }
+
+  .interierPart h1 {
+    margin-top: 130px;
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 412px ) {
   .inputsForm {
     margin-left: 95px;
+  }
+
+  .carousel-container {
+    margin-bottom: 1000px;
+  }
+
+  footer {
+    margin-top: 550px;
   }
 }
 
@@ -757,6 +950,12 @@ footer {
   .inputsForm {
     margin-left: 30px;
   }
+
+  .hello-text h1 {
+    font-size: 130px;
+  }
+
+  
 }
 
 @media (max-width: 273px) {
@@ -765,6 +964,7 @@ footer {
     width: 200px;
     height: 200px;
   }
+
 
   .describe {
     font-size: 18px;
@@ -794,6 +994,9 @@ footer {
     width: 180px;
   }
 
+  .overlay h1 {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 245px) {
@@ -828,6 +1031,8 @@ footer {
 .hamburger-button-container, .close-button, .btnHamburg, .btn-regist-Changed, .logoTh-Changed, #changeTheme-button-Changed, .flex-nav-png {
     display: none;
   }
+
+  
 }
 
 
@@ -838,3 +1043,24 @@ footer {
 }
 
 
+.btn-nav {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-catalog {
+  background-color: #f5f5f500;
+}
+
+#changeTheme-button {
+  background-color: #f5f5f500;
+}
+
+.btn-catalog {
+  margin-bottom: 18px;
+  margin-left: 10px;
+}
+
+.btn-text-nav {
+  padding-bottom: 10px;
+}
